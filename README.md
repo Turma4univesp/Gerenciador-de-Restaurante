@@ -84,4 +84,3 @@ Turma 06 - UNIVESP	@Turma4univesp
 📄 Licença
 Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
-<p align="center"> Desenvolvido com ❤️ por alunos da UNIVESP </p> ```

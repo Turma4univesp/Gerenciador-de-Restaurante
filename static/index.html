@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Restaurante Sabor da Casa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #fffdfa;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(90deg, #1f1f1f, #343434);
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.2em;
+      color: #fff;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: #f1f1f1;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .section-title {
+      text-align: center;
+      margin: 50px 0 20px;
+      font-size: 2em;
+      color: #d62828;
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      max-width: 300px;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 20px;
+    }
+    .card-content h3 {
+      margin-top: 0;
+      color: #111;
+    }
+    .card-content p {
+      color: #555;
+    }
+    .price {
+      color: #d62828;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .whatsapp-btn {
+      display: block;
+      width: fit-content;
+      margin: 40px auto 20px;
+      padding: 12px 25px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 25px;
+      font-size: 1em;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .whatsapp-btn:hover {
+      background-color: #1ebe5d;
+    }
+    footer {
+      background: #1f1f1f;
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 40px;
+    }
+    footer h3 {
+      margin-top: 0;
+      color: #fff;
+    }
+    .social-icons a {
+      margin: 0 10px;
+      display: inline-block;
+    }
+    .social-icons img {
+      width: 30px;
+      height: 30px;
+      vertical-align: middle;
+    }
+    @media (max-width: 768px) {
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Restaurante Sabor da Casa</h1>
+    <nav>
+      <a href="#pratos">Pratos</a>
+      <a href="#bebidas">Bebidas</a>
+    </nav>
+  </header>
+
+  <section id="pratos">
+    <h2 class="section-title">🍽️ Nossos Pratos</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="File.jpg" alt="Filé à Parmegiana">
+        <div class="card-content">
+          <h3>Filé à Parmegiana</h3>
+          <p>Filé empanado com molho de tomate e queijo gratinado</p>
+          <p class="price">R$ 38,90</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="salada.jpg" alt="Salada Mediterrânea">
+        <div class="card-content">
+          <h3>Salada Mediterrânea</h3>
+          <p>Mix de folhas, tomate cereja, queijo feta e azeitonas</p>
+          <p class="price">R$ 24,90</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Risoto.jpg" alt="Risoto de Cogumelos">
+        <div class="card-content">
+          <h3>Risoto de Cogumelos</h3>
+          <p>Arroz arbório cremoso com cogumelos frescos</p>
+          <p class="price">R$ 32,00</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="bebidas">
+    <h2 class="section-title">🍹 Bebidas</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="Refrigerantes.jpg" alt="Refrigerantes">
+        <div class="card-content">
+          <h3>Refrigerantes</h3>
+          <p>Coca-Cola, Guaraná, Fanta, Sprite</p>
+          <p class="price">R$ 6,00</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Suco.jpg" alt="Suco Natural">
+        <div class="card-content">
+          <h3>Sucos Naturais</h3>
+          <p>Laranja, Limão, Maracujá</p>
+          <p class="price">R$ 8,00</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Drink.jpg" alt="Drink">
+        <div class="card-content">
+          <h3>Drinks sem álcool</h3>
+          <p>Coquetéis refrescantes com frutas</p>
+          <p class="price">R$ 16,00</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <a href="https://wa.me/5511999999999" target="_blank" class="whatsapp-btn">📲 Fazer Pedido no WhatsApp</a>
+
+  <footer>
+    <h3>📞 Contato</h3>
+    <p>Email: contato@sabordacasa.com</p>
+    <p>WhatsApp: (11) 96944-6733</p>
+
+    <!-- Start Google Maps Integration -->
+    <h3>📍 Nossa Localização</h3>
+    <p>Estrada Alberto Hinoto - Poá, SP, 08570-081</p>
+    <div class="map-container" style="margin: 20px 0;">
+      <!-- Paste the iframe code from Google Maps here -->
+      <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.096814176781!2d-46.34750068554995!3d-23.52977986649121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce7a7f00e4f81d%3A0xa6d8e1c2a70b6c4b!2sEstr.%20Alberto%20Hinoto%20-%20Po%C3%A1%2C%20SP%2C%2008570-081!5e0!3m2!1sen!2sbr!4v1678886655443!5m2!1sen!2sbr"
+          width="100%"
+          height="300"
+          style="border:0; border-radius: 8px;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+    <!-- End Google Maps Integration -->
+
+    <div class="social-icons">
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram"></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="LinkedIn"></a>
+    </div>
+  </footer>
+</body>
+</html>

@@ -127,6 +127,33 @@
     }
   </style>
 </head>
+  <script>
+  // Aplica uma cor de fundo clara ao body
+  document.body.style.backgroundColor = "#f8f9fa";
+  document.body.style.fontFamily = "Arial, sans-serif";
+
+  // Animação simples ao carregar
+  window.onload = () => {
+    document.body.style.opacity = 0;
+    document.body.style.transition = "opacity 1s";
+    setTimeout(() => {
+      document.body.style.opacity = 1;
+    }, 100);
+  };
+
+  // Destacar títulos ao passar o mouse
+  const headings = document.querySelectorAll("h1, h2, h3");
+  headings.forEach(h => {
+    h.style.transition = "color 0.3s";
+    h.addEventListener("mouseover", () => {
+      h.style.color = "#007bff";
+    });
+    h.addEventListener("mouseout", () => {
+      h.style.color = "";
+    });
+  });
+</script>
+
 <body>
   <header>
     <h1>Restaurante Sabor da Casa</h1>
